@@ -1,0 +1,367 @@
+#main {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.account {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 200;
+  padding: 30px 16px;
+}
+
+.account span {
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+.account a {
+  color: #000;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 100px 60px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+.box {
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.slide-img {
+  height: 100%;
+  position: relative;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 237, 237, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-btn {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #252525;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover {
+  color: #fff;
+  background: #000;
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.highlight-products, .message, .highlight-blogs {
+  padding: 100px 60px;
+}
+
+.highlight-products {
+  margin-top: 100px;
+}
+
+.products-title, .message-title, .blogs-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products-title h2, .message h2, .blogs-title h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.products-title a, .message a, .blogs-title a {
+  display: block;
+  margin: 20px 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.products-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.message-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.blogs-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.message-box p:first-child {
+  font-size: 18px;
+  font-weight: 200;
+  color: #000;
+}
+
+.message-box p:last-child {
+  font-size: 14px;
+  font-weight: 200;
+  color: #000;
+  margin-top: 10px;
+}
+
+.blog {
+  width: 350px;
+  margin: 0 15px;
+}
+
+.product:nth-child(5n+1), .blog:first-child {
+  margin-left: 0;
+}
+
+.product:nth-child(5n+0), .blog:last-child {
+  margin-right: 0;
+}
+
+.product-img, .blog-img {
+  width: 100%;
+}
+
+.product-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img img {
+  width: 150px;
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.product-content {
+  text-align: center;
+  font-weight: 300;
+}
+
+.product-content, .blog-content {
+  color: #000;
+}
+
+.blog-content p:first-child {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-content p:last-child {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+@media (max-width: 1023px) {
+  .highlight-products, .message, .highlight-blogs {
+    padding: 100px 30px;
+  }
+
+  .products-box {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .blogs-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .blog {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+
+  .blog:nth-child(3n+1) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog:nth-child(3n+0) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 849px) {
+  .products-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 736px) {
+  .account {
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .account i {
+    margin-bottom: 3px;
+  }
+
+  .account span, .account a {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .title {
+    padding: 50px 10px;
+  }
+
+  .highlight-products, .message, .highlight-blogs {
+    padding: 50px 10px;
+  }
+
+  .highlight-products {
+    margin-top: 50px;
+  }
+
+  .products-title, .message-title, .blogs-title {
+    margin-bottom: 25px;
+  }
+
+  .products-title h2, .message h2, .blogs-title h2 {
+    font-size: 18px;
+  }
+
+  .products-title a, .message a, .blogs-title a {
+    font-size: 14px;
+  }
+
+  .products-box {
+    grid-template-columns: 50% 50%;
+  }
+
+  .blogs-box {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .product {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .blog {
+    width: 280px;
+    margin-bottom: 30px;
+  }
+
+  .product-content p {
+    font-size: 14px;
+  }
+
+  .message-box {
+    width: 100%;
+  }
+
+  .message-box p:first-child {
+    font-size: 14px;
+  }
+
+  .message-box p:last-child {
+    font-size: 10px;
+  }
+
+  .blog-content p:first-child {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog-content p:last-child {
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 280px) {
+  .products-box {
+    grid-template-columns: 100%;
+  }
+  .blog {
+    width: 240px;
+  }
+}
