@@ -1,0 +1,26 @@
+#main {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.account {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 200;
+  padding: 30px 16px;
+}
+
+.account span {
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+.account a {
+  color: #000;
+}
