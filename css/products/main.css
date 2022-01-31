@@ -1,7 +1,23 @@
+.globe-img {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.globe-img i {
+  font-size: 466px;
+  color: rgba(237, 237, 237, 0.5);
+}
+
 #main {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 a {
@@ -23,4 +39,213 @@ a {
 
 .account a {
   color: #000;
+}
+
+.sub-menu {
+  border-bottom: 1px solid #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.sub-menu div:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sub-menu div a {
+  color: #000;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.direct-path {
+  padding: 30px 30px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direct-path span a {
+  color: #000;
+  font-weight: 200;
+}
+
+.direct-path span a:hover {
+  text-decoration: underline;
+}
+
+.direct-path span form {
+  position: relative;
+}
+
+.direct-path span form::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  color: #00000061;
+  content: "\f002";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.direct-path span form input {
+  border: none;
+  padding: 7px 50px 7px 10px;
+  background: rgba(237, 237, 237, 0.5);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.list-products {
+  padding: 30px 60px;
+}
+
+.list-products .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-products .title h1 {
+  font-weight: 200;
+  font-size: 48px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products .product-box {
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+}
+
+.img-product {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #EDEDED;
+}
+
+.img-product img {
+  width: 100%;
+}
+
+.product-box h3 {
+  margin-bottom: 10px;
+}
+
+.short-desc p {
+  font-weight: 200;
+}
+
+.pagination-center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #EDEDED;
+  color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ededed;
+  color: #fff;
+}
+
+@media (max-width: 754px) {
+  .globe-img i {
+    font-size: 275px;
+  }
+
+  .account {
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .account i {
+    margin-bottom: 3px;
+  }
+
+  .account span, .account a {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  .direct-path {
+    flex-direction: column;
+  }
+
+  .direct-path span {
+    margin: 5px 0;
+  }
+
+  .list-products {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .list-products .title {
+    margin-bottom: 25px;
+  }
+
+  .list-products .title h1 {
+    font-size: 20px;
+  }
+
+  .products {
+    grid-template-columns: 50% 50%;
+  }
+
+  .products .product-box {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .img-product {
+    height: 100px;
+  }
+
+  .product-box h3 {
+    font-size: 16px;
+  }
+
+  .short-desc p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .pagination a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
 }
