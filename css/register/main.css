@@ -1,0 +1,195 @@
+.globe-img {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.globe-img i {
+  font-size: 466px;
+  color: rgba(237, 237, 237, 0.5);
+}
+
+#main {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.direct-path {
+  padding: 30px 30px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direct-path span a {
+  color: #000;
+  font-weight: 200;
+}
+
+.direct-path span a:hover {
+  text-decoration: underline;
+}
+
+.direct-path span form {
+  position: relative;
+  display: none;
+}
+
+.direct-path span form::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  color: #00000061;
+  content: "\f002";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.direct-path span form input {
+  border: none;
+  padding: 7px 50px 7px 10px;
+  background: rgba(237, 237, 237, 0.5);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.register-box {
+  padding: 30px 60px;
+}
+
+.register-box .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.register-box .title h1 {
+  font-weight: 200;
+  font-size: 48px;
+}
+
+form {
+  padding: 0 60px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 15px 15px;
+  border: 1px solid #EDEDED;
+  border-radius: 1px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.input-box:first-child input {
+  text-transform: capitalize;
+}
+
+.check-box {
+  margin-bottom: 20px;
+}
+
+.check-box input {
+  margin-right: 10px;
+}
+
+.check-box span {
+  font-weight: 200;
+}
+
+.submit-box {
+  width: 100%;
+  text-align: center;
+}
+
+.submit-box input {
+  padding: 20px 40px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  border: 1px solid #EDEDED;
+  border-radius: 1px;
+  color: #000;
+  background-color: transparent;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.submit-box input:hover {
+  border: 1px solid #fff;
+  background-color: #EDEDED;
+  color: #fff;
+}
+
+@media (max-width: 754px) {
+  .globe-img i {
+    font-size: 275px;
+  }
+
+  .direct-path {
+    flex-direction: column;
+  }
+
+  .direct-path span {
+    margin: 5px 0;
+  }
+
+  .register-box, form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .register-box .title h1 {
+    font-size: 20px;
+  }
+
+  .input-box label {
+    font-size: 13px;
+  }
+
+  .input-box input {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+
+  .check-box input {
+    margin-right: 3px;
+  }
+
+  .check-box span {
+    font-size: 13px;
+  }
+
+  .submit-box input {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}

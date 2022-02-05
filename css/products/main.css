@@ -103,6 +103,16 @@ a {
   font-size: 14px;
 }
 
+.direct-path span form button {
+  display: none;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px 7px 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
 .list-products {
   padding: 30px 60px;
 }
@@ -142,10 +152,12 @@ a {
 
 .product-box h3 {
   margin-bottom: 10px;
+  color: #000;
 }
 
 .short-desc p {
   font-weight: 200;
+  color: #000;
 }
 
 .pagination-center {
@@ -207,6 +219,24 @@ a {
 
   .direct-path span {
     margin: 5px 0;
+  }
+
+  .direct-path span form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .direct-path span form::after {
+    display: none;
+  }
+
+  .direct-path span form input {
+    padding-right: 30px;
+    margin-right: 5px;
+  }
+
+  .direct-path span form button {
+    display: inline;
   }
 
   .list-products {
