@@ -1,0 +1,275 @@
+.globe-img {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.globe-img i {
+  font-size: 466px;
+  color: rgba(237, 237, 237, 0.5);
+}
+
+#main {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.account {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 200;
+  padding: 30px 16px;
+}
+
+.account span {
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+.account a {
+  color: #000;
+}
+
+.direct-path {
+  padding: 30px 30px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direct-path span a {
+  color: #000;
+  font-weight: 200;
+}
+
+.direct-path span a:hover {
+  text-decoration: underline;
+}
+
+.direct-path span form {
+  position: relative;
+}
+
+.direct-path span form::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  color: #00000061;
+  content: "\f002";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.direct-path span form input {
+  border: none;
+  padding: 7px 50px 7px 10px;
+  background: rgba(237, 237, 237, 0.5);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.direct-path span form button {
+  display: none;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px 7px 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.list-cart {
+  padding: 30px 60px;
+}
+
+.list-cart .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-cart .title h1 {
+  font-weight: 200;
+  font-size: 48px;
+}
+
+.cart-info {
+  margin-bottom: 30px;
+}
+
+.quantity {
+  text-align: right;
+  padding: 30px 60px;
+}
+
+.quantity p {
+  font-size: 28px;
+  color: #ADADAD;
+  font-weight: 300;
+}
+
+/* table style  begin */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+}
+
+th {
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background-color: #ededed;
+}
+
+.img-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-column img {
+  width: 90px;
+}
+
+/* table style end */
+
+.decide-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.decide-button a {
+  color: #fff;
+  background-color: #F76E11;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: 0.6s;
+}
+
+.decide-button a:hover {
+  color: #fff;
+  background-color: #FF9F45;
+}
+
+.decide-button a:first-child:hover {
+  transform: translateX(-10px);
+}
+
+.decide-button a:last-child:hover {
+  transform: translateX(10px);
+}
+
+@media (max-width: 754px) {
+  .globe-img i {
+    font-size: 275px;
+  }
+
+  .account {
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .account i {
+    margin-bottom: 3px;
+  }
+
+  .account span, .account a {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .direct-path {
+    flex-direction: column;
+  }
+
+  .direct-path span {
+    margin: 5px 0;
+  }
+
+  .direct-path span form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .direct-path span form::after {
+    display: none;
+  }
+
+  .direct-path span form input {
+    padding-right: 30px;
+    margin-right: 5px;
+  }
+
+  .direct-path span form button {
+    display: inline;
+  }
+
+  .list-cart {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .list-cart .title {
+    margin-bottom: 25px;
+  }
+
+  .list-cart .title h1 {
+    font-size: 20px;
+  }
+
+  .quantity {
+    padding: 10px 10px;
+  }
+
+  .quantity p {
+    font-size: 18px;
+  }
+
+  .table-cart {
+    overflow: auto;
+  }
+
+  td, th {
+    font-size: 11px;
+  }
+
+  .img-column img {
+    width: 60px;
+  }
+
+  .decide-button a {
+    padding: 5px 5px;
+    font-size: 9px;
+  }
+}
